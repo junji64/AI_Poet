@@ -22,3 +22,16 @@ if st.button("시 작성"):
     with st.spinner("시 작성중 ..."):
         result = chat_model.invoke(subject + "에 대한 시를 써줘")
         st.write(result.content)
+
+st.markdown(r"""
+# LaTeX 수식 예제
+
+아래는 간단한 수식입니다:
+
+Inline 수식: $E = mc^2$
+
+Block 수식:
+$$
+f(x) = \int_{-\infty}^{\infty} e^{-x^2} dx
+$$
+""")
